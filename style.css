@@ -15,6 +15,31 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background-color: #410347;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.text-input{
+    padding: 0.7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius:5px;
+    border: 1px solid #e0e0e0;
+    /* outline:none; */
+    line-height: 1.5rem;
+    font-family: 'Lora';
+    font-size: 1.1rem;
+}
 header{
     background-color: #410347;
     height: 66px;
@@ -149,7 +174,116 @@ header .menu-toggle{
     border-top-right-radius: 5px;
     border-top-left-radius:  5px;
 }
+
+/* main page */
+
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+.content .main-content .post{
+    width: 95%;
+    height: 280px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+.content .main-content .post .read-more{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #410347;
+    border-radius: 0px;
+}
+.content .main-content .post .post-preview{
+    width: 70%;
+    float:right;
+    height: 280px;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.content .main-content .post .post-image{
+    width:30%;
+    height: 100%;
+    float:left;
+}
+.content .main-content .recent-post-title{
+    margin: 20px;
+    color: #410347;
+}
+.content .sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+.content .sidebar .section{
+    background-color: white;
+    padding: 20px;
+    border-radius:5px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar .section .section-title{
+    margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search{
+    margin-top: 80px;
+}
+
+.content .sidebar .section.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content .sidebar .section.topics ul a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul a:hover{
+    color: #3b023e;
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+
+.footer{
+    background-color: #500354;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content{
+    border: 1px solid red;
+    
+}
+.footer .footer-bottom{
+    background-color: #410347;
+    color: #d3d3d3;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 15px;
+    
+}
 /* media queries */
+
 
 @media only screen and (max-width:750px){
     header{
