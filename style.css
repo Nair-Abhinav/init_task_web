@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box; /* to delete extra height of the box..*/
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 html,body{
     height: 100%;
